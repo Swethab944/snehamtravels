@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="preb">
+    <h1>Pre Booking</h1>
+    <div class="container1">
+        <form action="https://formspree.io/f/xpzvykzy" method="POST">
+            <div class="centered-form">
+                <div class="form-row">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="number">Mobile Number:</label>
+                    <input type="text" name="number" id="number" required>
+                </div>
+                <div class="form-row">
+                    <label for="no-of-people">No of people:</label>
+                    <input type="text" name="no-of-people" id="no-of-people" required>
+                </div>
+                <div class="form-row">
+                    <label for="car">Choose a Car Type:</label>
+                    <select id="car" name="car">
+                        <option value="">Select</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="innova">Innova</option>
+                        <option value="ertiga">Ertiga</option>
+                        <option value="crysta">Crysta</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" name="start-date" id="start-date" required>
+                    <label for="end-date">End Date:</label>
+                    <input type="date" name="end-date" id="end-date" required>
+                </div>
+                <div class="form-row">
+                    <label for="start-time">Start Time:</label>
+                    <input type="text" name="start-time" id="start-time" required>
+                    <label for="end-time">End Time:</label>
+                    <input type="text" name="end-time" id="end-time" required>
+                </div>
+                <div class="form-row">
+                    <label for="start-place">Start Place:</label>
+                    <input type="text" name="start-place" id="start-place" required>
+                    <label for="end-place">End Place:</label>
+                    <input type="text" name="end-place" id="end-place" required>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </section>
+</body>
+</html>
